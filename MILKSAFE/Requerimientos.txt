@@ -1,0 +1,43 @@
+Aplicación para el seguimiento de envíos
+La aplicación permite rastrear paquetes en tiempo real desde el momento en que son enviados hasta su entrega. Proporcionando notificaciones sobre cambios en el estado del paquete, detalles del transportista y ubicación estimada. 
+Requerimientos funcionales (qué debe hacer el sistema):
+●	RF-01: La aplicación permitirá a los usuarios ingresar un número de seguimiento y mostrar el estado actual del paquete en menos de 3 segundos.
+●	RF-02: La aplicación deberá enviar notificaciones push al dispositivo del usuario en un máximo de 10 segundos después de que el estado del envío cambie a "En tránsito", "En reparto" o "Entregado". El usuario debe poder habilitar o deshabilitar estas notificaciones desde la configuración de la aplicación.
+Redacción alternativa (para la verificación de cada funcionalidad de manera independiente: 
+○	RF-02: La aplicación deberá enviar notificaciones push al dispositivo del usuario en un máximo de 10 segundos después de que el estado del envío cambie a "En tránsito", "En reparto" o "Entregado".
+○	RF-03: La aplicación permitirá a los usuarios habilitar o deshabilitar las notificaciones de cambios de estado del envío desde la configuración.
+●	RF-04: La aplicación deberá mostrar en un mapa la ubicación aproximada del paquete en tiempo real, si la empresa de mensajería lo permite.
+●	RF-05: La aplicación deberá ofrecer un historial de estados para cada envío, incluyendo fecha y hora de cada actualización.
+●	RF-06: La aplicación permitirá a los usuarios compartir el estado del envío mediante un enlace o captura de pantalla generada automáticamente.
+Requerimiento no funcionales (cómo debe hacerlo el sistema): 
+●	RNF-01 (Rendimiento): La aplicación deberá mostrar el estado actualizado de un envío en menos de 2 segundos después de realizar una consulta.
+●	RNF-02 (Disponibilidad): La aplicación deberá estar disponible al menos el 99.5% del tiempo en un período de 30 días.
+●	RNF-03 (Seguridad): La aplicación deberá cifrar los datos de los usuarios y envíos con el estándar AES-256 para garantizar la seguridad de la información.
+Nota: RF-02 es funcional porque describe un comportamiento específico del sistema (enviar una notificación) asociado con un evento y RNF-01 es no funcional porque describe una característica de rendimiento (tiempo de respuesta) que El sistema deberá cumplir en general, independientemente de qué función se esté ejecutando.
+Ambos incluyen un límite de tiempo, pero se diferencian en lo que están evaluando: uno evalúa un comportamiento específico (funcional), mientras que el otro evalúa el rendimiento general del sistema (no funcional).
+ 
+Sistema para la gestión de citas médicas
+El Hospital Pittier desarrolló un sistema para la gestión de citas médicas, permitiendo a los pacientes agendar, modificar y cancelar citas con facilidad. 
+Requerimientos funcionales:
+●	RF-01: El sistema permitirá a los pacientes agendar, modificar y cancelar citas médicas en línea.
+●	RF-02: El sistema deberá enviar notificaciones automáticas a los pacientes con recordatorios de sus citas 24 horas antes de la fecha programada.
+●	RF-03: El sistema permitirá a los médicos visualizar sus citas diarias y recibir alertas sobre cambios en su horario.
+●	RF-04: El sistema permitirá a los pacientes seleccionar a un médico específico según su disponibilidad.
+●	RF-05: El sistema permitirá a los administradores del hospital generar reportes mensuales sobre la cantidad de citas realizadas, canceladas y reprogramadas.
+Requerimiento no funcionales: 
+●	RNF-01 (Compatibilidad): El sistema deberá ser accesible desde navegadores web modernos y dispositivos móviles con Android e iOS.
+●	RNF-02 (Usabilidad): El sistema permitirá que un usuario sin conocimientos técnicos pueda agendar una cita en menos de 3 pasos.
+ 
+Sistema de análisis y estadísticas para canchas deportivas
+El centro deportivo SJM posee un sistema que permite a administradores y usuarios consultar estadísticas sobre el uso de sus canchas. El sistema recopila datos sobre reservas, tipos de deportes más practicados, horarios de mayor demanda y rendimiento de las instalaciones.
+Requerimientos funcionales:
+●	RF-01: El sistema permitirá a los administradores visualizar reportes sobre la ocupación de cada cancha en un período determinado. Los reportes deben ser exportables en formatos PDF y Excel e incluir información sobre el número de reservas, horas de ocupación y porcentaje de ocupación por cancha.
+●	RF-02: El sistema deberá generar estadísticas sobre los horarios de mayor y menor demanda de las canchas. Las estadísticas deben mostrarse en gráficos de barras o líneas, con la opción de filtrar por día, semana, mes o año, y deben permitir ordenar las horas según la demanda (mayor a menor y viceversa).
+●	RF-03: El sistema deberá mostrar gráficos comparativos del uso de diferentes tipos de canchas (fútbol, tenis, baloncesto, etc.). Los gráficos deben ser de tipo barras, comparando la ocupación de cada tipo de cancha en un período seleccionado. Los datos deben mostrar la cantidad de horas reservadas por cada tipo de cancha, y permitir la visualización por día, semana o mes.
+●	RF-04: El sistema permitirá a los usuarios consultar su historial de reservas y ver su tiempo total de uso de las canchas. Los usuarios deben poder filtrar su historial por fechas específicas (inicio y fin) y visualizar el tiempo total de uso en horas, desglosado por tipo de cancha. El historial debe incluir la fecha, hora de inicio, hora de fin y duración de cada reserva.
+●	RF-05: El sistema deberá enviar alertas automáticas a los administradores cuando una cancha tenga una ocupación menor al 30% durante una semana. Las alertas deben enviarse por correo electrónico y notificación dentro del sistema. El sistema permitirá configurar la frecuencia de las alertas (una sola vez o periódicamente hasta que la ocupación aumente al 30% o más).
+Requerimiento no funcionales: 
+●	RNF-01 (Disponibilidad): El sistema deberá estar disponible 24/7 con un tiempo de inactividad menor al 0.5% mensual.
+●	RNF-02 (Seguridad): Solo los administradores deben poder acceder a datos de ocupación global, mientras que los usuarios solo podrán ver sus propios datos.
+
+
